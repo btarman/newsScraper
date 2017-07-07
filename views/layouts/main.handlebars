@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css" type="text/css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Archivo+Narrow" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Rationale" rel="stylesheet">
+
+		<title>Sports Headlines</title>
+	</head>
+	<body>
+		<ul class="nav nav-tabs">
+  		<li role='presentation' class='active'>
+        <form action="/scrape" method="GET">
+          <button type="submit" class=" scrape-btn btn btn-primary btn-lg" >Scrape</button>
+        </form>
+         <form action="/saved" method="GET">
+          <button type="submit" class=" scrape-btn btn btn-primary btn-lg" >Saved Articles</button>
+        </form>
+      </li>
+		</ul>
+		<div class="jumbotron">
+  		<h1 id='jumbo-title'>Sports Scraper</h1>
+  		
+		</div>
+		<div id="wrapper">
+			{{{ body }}}
+		</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+	</body>
+</html>

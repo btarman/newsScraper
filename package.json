@@ -1,0 +1,20 @@
+{
+  "name": "assignment_15",
+  "version": "1.0.0",
+  "description": "newsScraper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bill_tarman",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cheerio": "^1.0.0-rc.1",
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^4.11.0",
+    "request": "^2.81.0",
+    "smooth-horizontal-scroll": "^1.0.3"
+  }
+}

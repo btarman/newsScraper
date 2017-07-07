@@ -1,0 +1,40 @@
+.wrapper {
+  background: black;
+}
+.nav {
+  background-color: black;
+  padding: 10px;
+  border-bottom-color: black;
+}
+.scrape-btn {
+  margin: 3px;
+}
+.jumbotron {
+  background-image: url('baseball.jpg');
+  text-align: center;
+  height: 400px;
+}
+#jumbo-title {
+  color: beige;
+  font-family: 'Rationale', sans-serif;
+  font-size: 100px
+}
+.panel-body {
+  background-color: #F95759;
+  color: white;
+  
+}
+.container {
+  background-color: black;
+  padding-top: 20px
+}
+.delete-btn {
+  float: left;
+  margin-left: 10px;
+}
+.save-btn {
+  float: left;
+}
+.card-title {
+  color: white;
+}

@@ -1,0 +1,23 @@
+<div class="container">
+  {{#each articles}}
+    {{#if this.saved}}
+      <div class='row'>
+        <div class='col-lg-12'>
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <a href="{{this.link}}" target="_blank">
+                <h2 class="card-title" id="{{this.id}}">{{this.title}}</h2>
+              </a>
+            {{!--<form action="/save" method="GET">--}}
+              <button type="submit" class="save-btn btn btn-primary btn-lg article-save" id='{{this.id}}' >Save</button>
+            {{!--</form>--}}
+            {{!--<form action="/delete" method="GET">
+              <button type="submit" class=" delete-btn btn btn-primary btn-lg" >Delete</button>
+            </form>--}}
+           </div>
+          </div>
+        </div>
+      </div>
+    {{/if}}
+  {{/each}}
+</div>
