@@ -27,7 +27,8 @@ app.set("view engine", "handlebars");
 
 // Database configuration with mongoose
 // mongoose.connect("mongodb://localhost/newsScraper");
-mongoose.connect("mongodb://heroku_mpjb8mtq:m6jg3p9231fc3f2b067p9qdk8l@ds151702.mlab.com:51702/heroku_mpjb8mtq");
+// mongoose.connect("mongodb://heroku_mpjb8mtq:m6jg3p9231fc3f2b067p9qdk8l@ds151702.mlab.com:51702/heroku_mpjb8mtq");
+mongoose.connect("mongodb://heroku_mpjb8mtq:m6jg3p9231fc3f2b067p9qdk8l@ds151702.mlab.com:51702/heroku_mpjb8mtq")
 
 var db = mongoose.connection;
 
@@ -41,21 +42,6 @@ db.once("open", function() {
   console.log("Mongoose connection successful.");
 });
 
-
-
-
-
-// app.get('/save', function(req, res) {
-//   var entry = new Article ({title: this.title, link: this.link});
-//   entry.save(function(err, doc) {
-//     if (err) {
-//       console.log(err)
-//     }
-//     else {
-//       console.log(doc);
-//     }
-//   })
-// })
 require("./routes/api-routes.js")(app);
 require("./routes/html-routes.js")(app);
 
